@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maxima Wealth Advisors</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" id="data-header">
+
+
+
+    <div class="header-bottom">
+      <div class="container">
+
+        <a href="index.html" class="header-head" style="text-decoration:none; display:inline-block;">
+          <h1 style="
+            font-family: 'Poppins', sans-serif;
+            font-weight: 900;
+            font-size: 2.2rem;
+            letter-spacing: 2px;
+            color: #1a237e;
+            margin: 0;
+            text-shadow: 0 2px 8px rgba(44,62,80,0.10);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            line-height: 1.1;
+          ">
+            <span style="color:#ff9800;">Maxima</span>
+            <span style="color:#1a237e;">Wealth</span>
+          </h1>
+        </a>
+
+        <button class="nav-open-btn" aria-label="Open Menu" onclick="document.querySelector('.navbar').classList.add('active')">
+          <ion-icon name="menu-outline"></ion-icon>
+        </button>
+        <nav class="navbar" data-navbar>
+
+          <div class="navbar-top">
+            <button class="nav-close-btn" data-nav-close-btn aria-label="Close Menu" onclick="document.querySelector('.navbar').classList.remove('active')">
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+          </div>
+
+          <div class="navbar-bottom">
+            <ul class="navbar-list">
+
+              <li>
+                <a href="#home" class="navbar-link" data-nav-link>Home</a>
+              </li>
+
+              <!-- About Dropdown -->
+              <li class="navbar-dropdown">
+                <a href="#about" class="navbar-link" data-nav-link>About Us <ion-icon name="chevron-down-outline"></ion-icon></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#about" class="dropdown-link">Who We Are</a></li>
+                  <li><a href="#founder" class="dropdown-link">Our Founder</a></li>
+                  <li><a href="#blog" class="dropdown-link">Blog</a></li>
+                </ul>
+              </li>
+
+              <!-- Services Dropdown -->
+              <li class="navbar-dropdown">
+                <a href="#service" class="navbar-link" data-nav-link>Services <ion-icon name="chevron-down-outline"></ion-icon></a>
+                <ul class="dropdown-menu">
+                  <li><a href="mutual-fund-advisory.html" class="dropdown-link">Mutual Fund Advisory</a></li>
+                  <li><a href="investment-planning.html" class="dropdown-link">Investment Planning</a></li>
+                  <li><a href="retirement-planning.html" class="dropdown-link">Retirement Planning</a></li>
+                  <li><a href="tax-planning.html" class="dropdown-link">Tax Planning & Advisory</a></li>
+                  <li><a href="estate-planning.html" class="dropdown-link">Estate Planning</a></li>
+                  <li><a href="coporate-advisory.html" class="dropdown-link">Corporate Advisory</a></li>
+                </ul>
+              </li>
+
+              <li>
+                <a href="#why" class="navbar-link" data-nav-link>Why Us</a>
+              </li>
+
+              <li>
+                <a href="#process" class="navbar-link" data-nav-link>Process</a>
+              </li>
+
+              <li>
+                <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
+              </li>
+
+              <li>
+                <a href="#faq" class="navbar-link" data-nav-link>FAQs</a>
+              </li>
+
+              <li>
+                <a href="#footer" class="navbar-link" data-nav-link>Contact</a>
+              </li>
+
+            </ul>
+          </div>
+
+        </nav>
+
+     
+
+      </div>
+    </div>
+
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="home">
+        <div class="container">
+
+          <div class="hero-content">
+
+            
+            <h1 class="h1 hero-title">Welcome to Maxima-Wealth</h1>
+
+            <p class="hero-text">
+                At Maxima Wealth Advisors, we are committed to empowering you with the knowledge and tools to achieve your financial goals. 
+                Our team of experienced, SEBI-registered advisors is dedicated to providing personalized investment planning and mutual fund advisory services that prioritize your needs and aspirations.
+          
+            </p>
+            <p class="hero-text">
+                🔹 SEBI-registered advisors<br>
+                🔹 16+ years of experience<br>
+                🔹 Transparent and client-first approach<br>
+                    Take control of your financial future – with Maxima Wealth Advisors.
+            </p>
+
+
+          </div>
+
+          <figure class="hero-banner">
+            <img src="./assets/images/bg1.webp" alt="home page image" class="w-100">
+          </figure>
+
+        </div>
+      </section>
+
+
+
+      <!---  Our Founder-->
+
+      <section class="founder" id="founder">
+        <div class="container founder-flex">
+
+          <figure class="founder-banner">
+            <img src="./assets/images/author.jpg" alt="Founder image">
+          </figure>
+
+          <div class="founder-content">
+            <p class="section-subtitle">Our Founder</p>
+            <h3 class="h3 section-title">Sivamurugan Sankaralingam</h3>
+
+            <h4 class="h4 section-title">Transforming Financial Dreams into Reality Through Experience, Passion, and Purpose</h4>
+            <p class="founder-text">
+              Sivamurugan Sankaralingam is the visionary founder and driving force behind Maxima Wealth Advisors, bringing over 16 years of distinguished experience in the banking and financial services industry. His journey from banking professional to entrepreneurial wealth advisor represents a commitment to elevating the standard of personalized financial guidance in India.
+            </p>
+
+            <h4 class="h4 section-title">A Foundation Built on Excellence</h4>
+            <p class="founder-text">
+              Sivamurugan's career began in the dynamic world of banking, where he spent more than a decade and a half mastering the intricacies of Investments and Relationship Management. His tenure in the banking sector wasn't just about years of service—it was about building deep expertise across diverse market conditions, economic cycles, and client needs throughout South India.<br>
+              Working across various markets in the southern region provided him with invaluable insights into the unique investment patterns, cultural preferences, and financial aspirations of Indian families and businesses. This regional expertise, combined with his technical proficiency, enabled him to develop a nuanced understanding of how global financial principles can be adapted to serve local investment objectives effectively.
+
+            </p>
+
+            <h4 class="h4 section-title">The Entrepreneurial Leap</h4>
+            <p class="founder-text">
+              In 2023, driven by an unwavering passion to offer more personalized, transparent, and strategic investment solutions, Sivamurugan made the pivotal decision to launch Maxima Wealth Advisors. This transition from the corporate banking world to entrepreneurship wasn't just a career change—it was a mission to bridge the gap between institutional financial expertise and individual investor needs.<br>
+              His decision to establish the firm in Coimbatore reflects his strategic vision of combining global financial insights with a strong local presence. Recognizing Coimbatore as an emerging financial hub with tremendous growth potential, he positioned Maxima Wealth Advisors to serve the evolving needs of the region's progressive business community and affluent families.
+
+            </p>
+
+            <h4 class="h4 section-title">Leadership Philosophy & Approach</h4>
+            <ul class="founder-list">
+              <li><strong>Client-Centric Excellence:</strong> Sivamurugan's approach goes beyond traditional advisory services to create genuine partnerships built on trust, transparency, and mutual success.</li>
+              <li><strong>Relationship-First Mindset:</strong> Drawing from his extensive background in Relationship Management, he understands that successful wealth management is fundamentally about understanding people—their dreams, concerns, and life goals.</li>
+              <li><strong>Innovation Through Experience:</strong> His proven track record in customer service excellence forms the foundation of Maxima Wealth Advisors’ service delivery model, combining time-tested financial principles with innovative solutions.</li>
+            </ul>
+
+            <h4 class="h4 section-title">Expertise That Makes the Difference</h4>
+            <ul class="founder-list">
+              <li><strong>Investment Mastery:</strong> 16 years of hands-on experience in investment management, deep knowledge of market dynamics, portfolio construction, and risk management strategies.</li>
+              <li><strong>Market Intelligence:</strong> Unique insights into regional economic trends, sectoral opportunities, and local investment preferences across South Indian markets.</li>
+              <li><strong>Regulatory Expertise:</strong> Comprehensive understanding of financial regulations, compliance requirements, and industry best practices.</li>
+            </ul>
+
+            <div class="founder-quote">
+              <h3>“Under Sivamurugan's leadership, Maxima Wealth Advisors continues to redefine what personalized wealth management means, one client relationship at a time.”</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="about" id="about">
+        <div class="container">
+
+          <figure class="about-banner">
+            <img src="./assets/images/bg2.png" alt="House interior">
+
+          </figure>
+
+          <div class="about-content">
+
+            <p class="section-subtitle">About Us</p>
+
+            <h2 class="h2 section-title">"Your health is our priority."</h2>
+
+            <p class="about-text">
+              At Maxima Wealth Advisors, we believe that every financial dream deserves a
+               strategic path to reality. As a premier investment planning and mutual fund advisory firm,
+                we are dedicated to transforming your financial aspirations into achievable milestones
+                 through trust, transparency, and meticulously tailored strategies.
+            </p>
+
+            
+            <p class="callout">
+              "Enimad minim veniam quis nostrud exercitation
+              llamco laboris. Lorem ipsum dolor sit amet"
+            </p>
+
+        
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SERVICE
+      -->
+
+      <section class="service" id="service">
+        <div class="container">
+
+          <p class="section-subtitle">Our Services</p>
+
+          <h2 class="h2 section-title">Our Main Focus</h2>
+
+          <ul class="service-list">
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/service-1.png" alt="Service icon">
+                </div>
+
+               <h3 class="h3 card-title">
+                <a href="mutual-fund-advisory.html">Mutual Fund Advisory</a>
+                </h3>
+
+                <p class="card-text">
+                 Transform your investment approach with our expert mutual fund advisory services that take the guesswork out of fund selection and portfolio management.
+
+                </p>
+
+              <a href="mutual-fund-advisory.html" class="card-link">
+              <span>Know more</span>
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+              </a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/service-2.png" alt="Service icon">
+                </div>
+
+                <h3 class="h3 card-title">
+                  <a href="investment-planning.html">Investment Planning</a>
+                </h3>
+
+                <p class="card-text">
+                  Whether you're planning for your child's education, dream home, or building long-term wealth, our comprehensive investment planning services provide the roadmap to achieve your financial aspirations.
+                </p>
+
+                <a href="investment-planning.html" class="card-link">
+                  <span>Know more</span>
+
+                  <ion-icon name="arrow-forward-outline"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/service-3.png" alt="Service icon">
+                </div>
+
+                <h3 class="h3 card-title">
+                  <a href="retirement-planning.html">Retirement Planning</a>
+                </h3>
+
+                <p class="card-text">
+                  Plan for a retirement that maintains your desired lifestyle while accounting for inflation, healthcare costs, and changing needs over time.
+                </p>
+
+                <a href="retirement-planning.html" class="card-link">
+                  <span>Know More</span>
+
+                  <ion-icon name="arrow-forward-outline"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/service-3.png" alt="Service icon">
+                </div>
+
+                <h3 class="h3 card-title">
+                  <a href="tax-planning.html">Tax Planning & Advisory</a>
+                </h3>
+
+                <p class="card-text">
+                  Navigate the complex tax landscape with expert guidance that helps you keep more of what you earn while staying fully compliant.
+                </p>
+
+                <a href="tax-planning.html" class="card-link">
+                  <span>Know More</span>
+
+                  <ion-icon name="arrow-forward-outline"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/service-3.png" alt="Service icon">
+                </div>
+
+                <h3 class="h3 card-title">
+                  <a href="estate-planning.html">Estate Planning</a>
+                </h3>
+
+                <p class="card-text">
+                  Ensure your wealth is preserved and transferred according to your wishes through comprehensive estate planning that protects your family's future.
+                </p>
+
+                <a href="estate-planning.html" class="card-link">
+                  <span>Know More</span>
+
+                  <ion-icon name="arrow-forward-outline"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/service-3.png" alt="Service icon">
+                </div>
+
+                <h3 class="h3 card-title">
+                  <a href="coporate-advisory.html">Corporate Advisory</a>
+                </h3>
+
+                <p class="card-text">
+                  Help your business optimize its financial resources and take care of your most valuable asset – your employees.
+                </p>
+
+                <a href="coporate-advisory.html" class="card-link">
+                  <span>Know More</span>
+
+                  <ion-icon name="arrow-forward-outline"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #Why Us
+      -->
+
+      <section class="Why" id="why">
+        <div class="container">
+
+
+          <h2 class="h2 section-title">WHY US</h2>
+          <ul class="why-list">
+            <li>
+              <strong>Transparent Process:</strong> Clear communication about strategies, costs, and expected outcomes with no hidden fees or surprises.
+            </li>
+            <li>
+              <strong>Ongoing Partnership:</strong> Continuous monitoring, regular reviews, and strategy adjustments as your life and goals evolve.
+            </li>
+            <li>
+              <strong>Deep Regional Understanding:</strong> Our extensive experience across South Indian markets provides unique insights into local investment opportunities and regional economic trends that can benefit your portfolio.
+            </li>
+            <li>
+              <strong>Holistic Approach:</strong> Beyond mutual funds and investments, we provide comprehensive financial planning that considers your entire financial ecosystem – from insurance needs to retirement planning.
+            </li>
+            <li>
+              <strong>Technology-Driven Insights:</strong> We combine traditional advisory wisdom with modern analytical tools to provide data-driven recommendations and real-time portfolio monitoring.
+            </li>
+            <li>
+              <strong>Accessibility & Education:</strong> We believe in empowering our clients through financial education, making complex investment concepts understandable and actionable.
+            </li>
+            <li>
+              <strong>Proven Track Record:</strong> Our founder's 16-year journey in financial services, including successful relationship management across diverse market conditions, brings invaluable experience to every client interaction.
+            </li>
+          </ul>
+
+           <div class="why-quote">
+            <p class="callout">
+          Ready to transform your financial future? Contact us today to discover how our comprehensive services can help you achieve your wealth goals with confidence and clarity.
+            </p>
+
+
+        </div>
+
+
+        
+      </section>
+
+      
+     
+
+
+
+
+
+      <!-- 
+        - #Process
+      -->
+
+      <section class="process" id="process">
+        <div class="container">
+
+          <h2 class="h2 section-title">Process</h2>
+          <p class="section-subtitle">The Maxima Way – Our 4 -Step Advisory Process</p>
+
+          <div class="process-grid">
+            <div class="process-box">
+              <div class="process-icon">
+                <ion-icon name="call-outline"></ion-icon>
+              </div>
+              <h3 class="process-title">Step 1: Discovery Call</h3>
+              <p class="process-text">
+                Understanding your goals, dreams, and current financial health.
+              </p>
+            </div>
+            <div class="process-box">
+              <div class="process-icon">
+                <ion-icon name="analytics-outline"></ion-icon>
+              </div>
+              <h3 class="process-title">Step 2: Planning Session</h3>
+              <p class="process-text">
+                Identifying appropriate investment products based on time horizon and risk profile.
+              </p>
+            </div>
+            <div class="process-box">
+              <div class="process-icon">
+                <ion-icon name="construct-outline"></ion-icon>
+              </div>
+              <h3 class="process-title">Step 3: Monitoring & Reporting</h3>
+              <p class="process-text">
+                Ongoing performance reviews, rebalancing, and market insights.
+              </p>
+            </div>
+            <div class="process-box">
+              <div class="process-icon">
+                <ion-icon name="sync-outline"></ion-icon>
+              </div>
+              <h3 class="process-title">Step 4:	Adjustments as Life Evolves</h3>
+              <p class="process-text">
+                Whether it’s a job change, child’s education, or retirement, we stay with you through it all.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #BLOG
+      -->
+
+      <section class="blog" id="blog">
+        <div class="container">
+
+          <p class="section-subtitle">News & Blogs</p>
+
+          <h2 class="h2 section-title">Leatest News Feeds</h2>
+
+          <ul class="blog-list has-scrollbar">
+
+            <li>
+              <div class="blog-card"   id="blog-card-1">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/blog-1.avif" alt="Retirement-planning-pic" class="w-100">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-content-top">
+
+                    <ul class="card-meta-list">
+
+                      <li>
+                        <a href="#" class="card-meta-link">
+                          <ion-icon name="person"></ion-icon>
+
+                          <span>by: Admin</span>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#" class="card-meta-link">
+                          <ion-icon name="pricetags"></ion-icon>
+
+                          <span>Happy-Retirement</span>
+                        </a>
+                      </li>
+
+                    </ul>
+
+                    <h3 class="h3 blog-title">
+                      <a href="https://retirement-planning-30.blogspot.com/2025/06/why-retirement-planning-should-start-in.html">Why Retirement Planning Should Start in Your 30s</a>
+                    </h3>
+
+                  </div>
+
+                  <div class="blog-content-bottom">
+                    <div class="publish-date">
+                      <ion-icon name="calendar"></ion-icon>
+
+                      <time datetime="2025-06-05">Jun 5, 2025</time>
+                    </div>
+
+                    <a href="https://retirement-planning-30.blogspot.com/2025/06/why-retirement-planning-should-start-in.html" class="read-more-btn">Read More</a>
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+
+
+
+            <li>
+              <div class="blog-card" id="blog-card-2">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/blog-2.webp" alt="Recent Commercial Real Estate Transactions" class="w-100">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-content-top">
+
+                    <ul class="card-meta-list">
+
+                      <li>
+                        <a href="#" class="card-meta-link">
+                          <ion-icon name="person"></ion-icon>
+
+                          <span>by: Admin</span>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#" class="card-meta-link">
+                          <ion-icon name="pricetags"></ion-icon>
+
+                          <span>Mutual-Fund</span>
+                        </a>
+                      </li>
+
+                    </ul>
+
+                    <h3 class="h3 blog-title">
+                      <a href="https://mutual-fund-investing90.blogspot.com/2025/06/5-mistakes-investors-make-in-mutual.html">5 Mistakes Investors Make in Mutual Funds</a>
+                    </h3>
+
+                  </div>
+
+                  <div class="blog-content-bottom">
+                    <div class="publish-date">
+                      <ion-icon name="calendar"></ion-icon>
+
+                      <time datetime="2025-06-05">Jun 5, 2025</time>
+                    </div>
+
+                    <a href="https://mutual-fund-investing90.blogspot.com/2025/06/5-mistakes-investors-make-in-mutual.html" class="read-more-btn">Read More</a>
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+
+
+
+            <li>
+              <div class="blog-card" id="blog-card-3">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/blog-3.jpg" alt="Renovating a Living Room? Experts Share Their Secrets"
+                    class="w-100">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-content-top">
+
+                    <ul class="card-meta-list">
+
+                      <li>
+                        <a href="" class="card-meta-link">
+                          <ion-icon name="person"></ion-icon>
+
+                          <span>by: Admin</span>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="" class="card-meta-link">
+                          <ion-icon name="pricetags"></ion-icon>
+
+                          <span>Tax</span>
+                        </a>
+                      </li>
+
+                    </ul>
+
+                    <h3 class="h3 blog-title">
+                      <a href="https://tax-efficient-investment50.blogspot.com/2025/06/how-to-plan-tax-efficient-investments.html"e>• “How to Plan Tax-Efficient Investments in FY 2025”</a>
+                    </h3>
+
+                  </div>
+
+                  <div class="blog-content-bottom">
+                    <div class="publish-date">
+                      <ion-icon name="calendar"></ion-icon>
+
+                      <time datetime="2025-06-05">June 5, 2025</time>
+                    </div>
+
+                    <a href="https://tax-efficient-investment50.blogspot.com/2025/06/how-to-plan-tax-efficient-investments.html" class="read-more-btn">Read More</a>
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+      <!-- 
+        - #FAQ 
+        --->
+
+      <section class="faq" id="faq">
+
+         <h2 class="h2 section-title">Frequently Asked Questions</h2>
+         
+        <div class="container-flex">
+
+
+         
+          <div class="complaint-report-box">
+                 <h3>📝 Complaint Report</h3>
+              <ul class="complaint-stats">
+                <li><strong>Complaints Received:</strong> 2</li>
+                <li><strong>Complaints Resolved:</strong> 2</li>
+              </ul>
+          </div>
+
+
+
+            <div class="faq-enquiry">
+         <h3 class="enquiry-title">Enquiry Form</h3>
+         
+          <form class="enquiry-form" action="https://formspree.io/f/xpwrwonr" method="POST" autocomplete="off">
+            <div class="form-group">
+              <input type="text" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+               <input type="email" name="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+              <input type="tel" name="mobile" placeholder="Mobile Number" pattern="[0-9]{10,15}" required>
+            </div>
+            <div class="form-group">
+               <textarea name="message" rows="3" placeholder="Your Message" required></textarea>
+            </div>
+           <button type="submit" class="enquiry-btn">Submit</button>
+         </form>
+        </div>
+
+      </section>
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer" id="footer">
+
+     <div class="footer-top">
+      <div class="container">
+
+        <div class="footer-left">
+          <ul class="contact-list">
+
+            <li>
+              <a href="#" class="contact-link">
+                <ion-icon name="location-outline"></ion-icon>
+
+                <address>
+                  1st Floor , Door no 6/3, New No 162
+                          Balasundaram Street, Kamadhenu Nagar, Avarampalayam
+                                  Coimbatore-641006 Tamil Nadu , India
+                    </address>
+                  </a>
+            </li>
+
+            <li>
+              <a href="tel:+0123456789" class="contact-link">
+                <ion-icon name="call-outline"></ion-icon>
+
+                <span>7200254956</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="mailto:contact@homeverse.com" class="contact-link">
+                <ion-icon name="mail-outline"></ion-icon>
+
+                <span>maximawealthadvisors@gmail.com</span>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+
+
+         <div class="footer-right">
+
+                <!-- Map Embed Start -->
+                <div class="footer-map" style="margin: 18px 0 18px 0; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 12px rgba(44,62,80,0.08); max-width: 320px;">
+                 <iframe
+                 src="https://www.google.com/maps?q=1st+Floor,+Door+no+6/3,+New+No+162+Balasundaram+Street,+Kamadhenu+Nagar,+Avarampalayam,+Coimbatore-641006+Tamil+Nadu,+India&output=embed"
+                 width="100%" height="160" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                 title="Maxima Wealth Advisors Location"></iframe>
+                </div>
+                <!-- Map Embed End -->
+
+        <div class="footer-social">
+          <p class="section-subtitle">Follow Us</p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-whatsapp"></ion-icon>
+              </a>
+            </li>
+
+          
+
+          </ul>
+
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        
+
+        <p class="copyright">
+          &copy; 2025 @ Maxima-Wealth-Advisor . All Rights Reserved
+        </p>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

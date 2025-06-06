@@ -75,5 +75,14 @@ document.querySelectorAll(".navbar-dropdown > .navbar-link").forEach(link => {
   });
 });
 
+// Open menu
+document.querySelector('.nav-open-btn').onclick = function() {
+  document.querySelector('.navbar').classList.add('active');
+};
+// Close menu
+document.querySelector('.nav-close-btn').onclick = function() {
+  document.querySelector('.navbar').classList.remove('active');
+};
+
 
 

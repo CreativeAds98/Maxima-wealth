@@ -25,6 +25,15 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap"
     rel="stylesheet">
+
+  <!-- Add this style block in your <head> section or in your CSS file -->
+  <style>
+    @media (min-width: 901px) {
+      .nav-open-btn {
+        display: none !important;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -65,7 +74,7 @@
         <nav class="navbar" data-navbar>
 
           <div class="navbar-top">
-            <button class="nav-close-btn" data-nav-close-btn aria-label="Close Menu" onclick="toggleMenu()">
+            <button class="nav-close-btn"  aria-label="Close Menu" onclick="toggleMenu()">
               <ion-icon name="close-outline"></ion-icon>
             </button>
           </div>

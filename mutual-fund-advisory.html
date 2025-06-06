@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Mutual Fund Advisory | Maxima Wealth Advisors</title>
   <link rel="stylesheet" href="assets/css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
   <!-- Header Start -->
@@ -126,27 +127,23 @@
     <section class="service-detail">
     <div class="container" style="margin-left:260px;">
       <h1 class="h2 section-title" style="text-align:center;">Mutual Fund Advisory</h1>
-      <img src="assets/images/service-9.avif" alt="Investment Planning" style="max-width:420px; margin-bottom:24px; display:block; margin-left:auto; margin-right:auto;">
+      <img src="assets/images/service-20.jpg" alt="Investment Planning" style="max-width:420px; margin-bottom:24px; display:block; margin-left:auto; margin-right:auto;">
      
 
       <div class="paragraph-section">
-  <h2>Mutual Fund Advisory: Guiding You Toward Smarter Investments</h2>
-  <p><strong>Mutual fund advisory</strong> is the key to building a diversified <strong>and goal-oriented investment portfolio, tailored to your risk profile and financial objectives.</strong>.</p>
+  <h2>Smart Investing Made Simple</h2>
+  <p>Transform your investment approach with our expert mutual fund advisory services that take the guesswork out of fund selection and portfolio management.</p>
   
-  <p> Our expert advisory team assists clients in selecting mutual funds through a <strong>a personalized investment strategy</strong> one that focuses on<strong>wealth creation, capital growth, and risk mitigation.</strong>.</p>
   
-  <h3>Key elements of our mutual fund advisory services include:</h3>
+  <h3>What You Gain:</h3>
   <ul>
-    <li>Curating funds based<strong>on risk tolerance and financial goals</strong></li>
-    <li>Ongoing portfolio  <strong>monitoring and performance tracking</strong></li>
-    <li><strong>Rebalancing strategies </strong>to adapt to market conditions</li>
-    <li>Tax-efficient investment planning using equity and debt funds</li>
-    <li>Diversification across asset classes for optimal returns</li>
+    <li><strong>•	Strategic Portfolio Diversification</strong>– Spread risk intelligently across asset classes, sectors, and market capitalizations to optimize returns while minimizing volatility</li>
+    <li><strong>•	Tax-Efficient Fund Selection </strong>– Choose funds that maximize your after-tax returns through careful analysis of tax implications and optimal fund structures</li>
+    <li><strong>•	Continuous Performance Monitoring  </strong>Regular portfolio reviews and rebalancing to ensure your investments stay aligned with market opportunities and your evolving goals</li>
+    <li><strong>•	Expert Fund Research</strong>– Access to in-depth analysis of fund managers, investment strategies, and historical performance to make informed decisions</li>
+   
   </ul>
 
-  <p>We prioritize <strong>investor education and transparency to help you make confident financial decisions.</strong>.</p>
-  <p>With our guidance, you don’t just invest—you invest with purpose and clarity.</p>
-  <p><strong>Let us help you build a future-focused, disciplined mutual fund investment plan.</strong></p>
 </div>
 
 
@@ -205,7 +202,7 @@
 }
 
 .service-list li {
-  background-color: #2E8B57;
+  background-color: #6c8f7b;
   color: white;
   padding: 15px 15px;
   margin-bottom: 0; /* No gap between list items */
@@ -302,6 +299,175 @@ body.loaded {
 body.loaded .services-container-left {
   transform: translateX(0);
   opacity: 1;
+}
+
+/* Responsive Styles */
+@media (max-width: 900px) {
+  .container {
+    margin-left: 0 !important;
+    padding: 0 10px;
+  }
+  .service-detail .container {
+    margin-left: 0 !important;
+    padding: 0 5px;
+  }
+  .services-container-left {
+    position: static !important;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    transform: none !important;
+    opacity: 1 !important;
+    left: 0 !important;
+    top: 0 !important;
+  }
+  .services {
+    margin-left: 0 !important;
+    width: 100%;
+    align-items: flex-start;
+  }
+  .service-list {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  .services-container-left {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: static !important;
+    left: 0 !important;
+    top: 0 !important;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+  .services {
+    margin-left: 0 !important;
+    width: 100%;
+    align-items: stretch;
+  }
+  .service-list {
+    width: 100%;
+    max-width: 100%;
+  }
+  .service-detail .container {
+    margin-left: 0 !important;
+    padding: 0 2vw;
+  }
+  .paragraph-section {
+    max-width: 100%;
+    padding: 0 5px;
+    font-size: 15px;
+  }
+  .service-detail img {
+    max-width: 98vw !important;
+    height: auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .header-bottom .container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5px;
+  }
+  .header-head h1 {
+    font-size: 1.2rem !important;
+    gap: 4px !important;
+  }
+  .service-detail .container {
+    padding: 0 2vw;
+  }
+  .paragraph-section {
+    font-size: 14px;
+    padding: 0 2px;
+  }
+  .service-detail img {
+    max-width: 96vw !important;
+    height: auto;
+  }
+  .enquiry-btn {
+    font-size: 1rem;
+    padding: 10px 18px;
+  }
+  .service-list {
+    width: 100%;
+    max-width: 100%;
+  }
+  .services {
+    margin-left: 0 !important;
+  }
+}
+
+/* Hamburger and Navbar Responsive */
+@media (max-width: 900px) {
+  .header-bottom .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav-open-btn {
+    display: block !important;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #1a237e;
+    margin-left: 1rem;
+  }
+  .navbar {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: #fff;
+    width: 80vw;
+    max-width: 320px;
+    box-shadow: 0 2px 12px rgba(44,62,80,0.08);
+    z-index: 1000;
+    display: none;
+    flex-direction: column;
+    padding: 1.5rem 1rem;
+  }
+  .navbar.active {
+    display: flex;
+  }
+  .nav-close-btn {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #1a237e;
+    margin-left: auto;
+    margin-bottom: 1rem;
+  }
+  .navbar-list {
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+}
+@media (min-width: 901px) {
+  .nav-open-btn, .nav-close-btn {
+    display: none !important;
+  }
+  .navbar {
+    display: flex !important;
+    position: static;
+    background: none;
+    box-shadow: none;
+    flex-direction: row;
+    padding: 0;
+    width: auto;
+    max-width: none;
+  }
+  .navbar-list {
+    flex-direction: row;
+    gap: 2rem;
+  }
 }
 
    </style>

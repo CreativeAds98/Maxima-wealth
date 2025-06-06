@@ -49,3 +49,31 @@ window.addEventListener("scroll", function () {
   window.scrollY >= 400 ? header.classList.add("active")
     : header.classList.remove("active");
 }); 
+
+
+function toggleMenu() {
+  const navbar = document.querySelector(".navbar");
+  const overlay = document.querySelector(".overlay");
+
+  if (navbar.classList.contains("active")) {
+    navbar.classList.remove("active");
+    overlay.classList.remove("active");
+  } else {
+    navbar.classList.add("active");
+    overlay.classList.add("active");
+  }
+}
+
+// Handle dropdowns on mobile
+document.querySelectorAll(".navbar-dropdown > .navbar-link").forEach(link => {
+  link.addEventListener("click", function (e) {
+    if (window.innerWidth <= 768) {
+      e.preventDefault();
+      const dropdown = this.nextElementSibling;
+      dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+    }
+  });
+});
+
+
+

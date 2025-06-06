@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Investment Planning | Maxima Wealth Advisors</title>
   <link rel="stylesheet" href="assets/css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
   <!-- Header Start -->
@@ -131,22 +132,20 @@
      
 
       <div class="paragraph-section">
-  <h2>Wealth Preservation: Securing Your Financial Future with Confidence</h2>
-  <p><strong>Preserving wealth</strong> is the essential first step toward achieving a <strong>secure and financially stable future</strong>.</p>
+  <h2>Building Wealth for Life's Most Important Goals</h2>
+  <p>Whether you're planning for your child's education, dream home, or building long-term wealth, our comprehensive investment planning services provide the roadmap to achieve your financial aspirations.</p>
   
-  <p>Our team of experienced financial professionals specializes in helping clients transition to a <strong>conservative investment strategy</strong>—one that balances <strong>capital preservation, income generation, and liquidity needs</strong>.</p>
   
-  <h3>Key elements of our wealth preservation planning include:</h3>
+  <h3>What You Gain:</h3>
   <ul>
-    <li>Shifting to <strong>low-risk investment products</strong></li>
-    <li>Ensuring <strong>liquidity management</strong></li>
-    <li><strong>Risk mitigation planning</strong> through insurance and asset protection</li>
-    <li>Strategic allocation to reduce tax exposure and volatility</li>
+    <li><strong>•	Goal-Based Wealth Building </strong>– Customized investment strategies that align with your specific financial objectives and timelines</li>
+    <li><strong>•	Education Planning Solutions </strong>– Ensure your children's educational dreams are fully funded through systematic investment approaches</li>
+    <li><strong>•	Major Life Goal Funding </strong> – Strategic planning for significant purchases, travel, business ventures, or any important life milestone</li>
+    <li><strong>•	SEBI-Regulated Product Access </strong>– Investment recommendations using only regulated, transparent financial products that meet the highest compliance standards</li>
+    <li><strong>•	Risk-Adjusted Returns </strong>– Portfolio construction that balances growth potential with your comfort level and investment horizon</li>
+
   </ul>
 
-  <p>We place strong emphasis on the <strong>role of insurance in financial planning</strong>.</p>
-  <p>With our expertise, you don’t just protect your wealth—you <strong>plan proactively</strong>.</p>
-  <p><strong>Secure your legacy with a smart, strategic, and future-focused wealth preservation plan.</strong></p>
 </div>
 
 
@@ -205,7 +204,7 @@
 }
 
 .service-list li {
-  background-color: #2E8B57;
+  background-color: #6c8f7b;
   color: white;
   padding: 15px 15px;
   margin-bottom: 0; /* No gap between list items */
@@ -302,6 +301,173 @@ body.loaded {
 body.loaded .services-container-left {
   transform: translateX(0);
   opacity: 1;
+}
+
+/* Responsive Styles */
+@media (max-width: 900px) {
+  .container {
+    margin-left: 0 !important;
+    padding: 0 10px;
+  }
+  .service-detail .container {
+    margin-left: 0 !important;
+    padding: 0 5px;
+  }
+  .services-container-left {
+    position: static !important;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    transform: none !important;
+    opacity: 1 !important;
+    left: 0 !important;
+    top: 0 !important;
+  }
+  .services {
+    margin-left: 0 !important;
+    width: 100%;
+    align-items: flex-start;
+  }
+  .service-list {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  .services-container-left {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: static !important;
+    left: 0 !important;
+    top: 0 !important;
+  }
+  .services {
+    margin-left: 0 !important;
+    width: 100%;
+    align-items: stretch;
+  }
+  .service-list {
+    width: 100%;
+    max-width: 100%;
+  }
+  .service-detail .container {
+    margin-left: 0 !important;
+    padding: 0 2vw;
+  }
+  .paragraph-section {
+    max-width: 100%;
+    padding: 0 5px;
+    font-size: 15px;
+  }
+  .service-detail img {
+    max-width: 98vw !important;
+    height: auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .header-bottom .container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5px;
+  }
+  .header-head h1 {
+    font-size: 1.2rem !important;
+    gap: 4px !important;
+  }
+  .service-detail .container {
+    padding: 0 2vw;
+  }
+  .paragraph-section {
+    font-size: 14px;
+    padding: 0 2px;
+  }
+  .service-detail img {
+    max-width: 96vw !important;
+    height: auto;
+  }
+  .enquiry-btn {
+    font-size: 1rem;
+    padding: 10px 18px;
+  }
+  .service-list {
+    width: 100%;
+    max-width: 100%;
+  }
+  .services {
+    margin-left: 0 !important;
+  }
+}
+
+/* Hamburger and Navbar Responsive */
+@media (max-width: 900px) {
+  .header-bottom .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav-open-btn {
+    display: block !important;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #1a237e;
+    margin-left: 1rem;
+  }
+  .navbar {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: #fff;
+    width: 80vw;
+    max-width: 320px;
+    box-shadow: 0 2px 12px rgba(44,62,80,0.08);
+    z-index: 1000;
+    display: none;
+    flex-direction: column;
+    padding: 1.5rem 1rem;
+  }
+  .navbar.active {
+    display: flex;
+  }
+  .nav-close-btn {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #1a237e;
+    margin-left: auto;
+    margin-bottom: 1rem;
+  }
+  .navbar-list {
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+}
+@media (min-width: 901px) {
+  .nav-open-btn, .nav-close-btn {
+    display: none !important;
+  }
+  .navbar {
+    display: flex !important;
+    position: static;
+    background: none;
+    box-shadow: none;
+    flex-direction: row;
+    padding: 0;
+    width: auto;
+    max-width: none;
+  }
+  .navbar-list {
+    flex-direction: row;
+    gap: 2rem;
+  }
 }
 
    </style>

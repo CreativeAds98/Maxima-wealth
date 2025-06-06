@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Tax Planning & Advisory | Maxima Wealth Advisors</title>
   <link rel="stylesheet" href="assets/css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
   <!-- Header Start -->
@@ -113,9 +114,9 @@
         <li><a href="mutual-fund-advisory.html" >Mutual Fund Advisory</a></li>
         <li><a href="investment-planning.html" >Investment Planning</a></li>
         <li><a href="retirement-planning.html" >Retirement Planning</a></li>
-        <li class="active"><a href="tax-planning.html" >Tax Planning & Advisory</a></li>
+        <li class="active"><a href="tax-planning.html">Tax Planning & Advisory</a></li>
         <li><a href="estate-planning.html" >Estate Planing</a></li>
-        <li><a href="coporate-advisory.html" >Corporate Advisory</a></li>
+        <li><a href="coporate-advisory.html">Corporate Advisory</a></li>
       </ul>
     </div>
     <div class="services-content">
@@ -130,23 +131,20 @@
      
 
       <div class="paragraph-section">
-  <h2>Tax Planning: Optimizing Your Wealth with Strategic Financial Choices</h2>
-  <p><strong>Tax planning</strong>  is a proactive approach to managing your finances while ensuring compliance and <strong>minimizing tax liability.</strong>.</p>
+  <h2>Maximize Your Wealth Through Smart Tax Strategies</h2>
+  <p>Navigate the complex tax landscape with expert guidance that helps you keep more of what you earn while staying fully compliant.</p>
   
-  <p> Our team of tax and financial experts helps clients design a <strong>personalized tax strategy</strong>—one that supports <strong>wealth creation, legal efficiency, and financial clarity.</strong>.</p>
   
-  <h3>Key elements of our tax planning services include:</h3>
+  <h3>What You Gain:</h3>
   <ul>
-    <li>Identifying<strong>and utilizing eligible tax deductions and exemptions</strong></li>
-    <li>Strategic investments<strong> under Sections 80C, 80D, and beyond</strong></li>
-    <li><strong>Capital gains management </strong> through proper asset allocation</li>
-    <li>Year-round advisory to avoid last-minute tax stress</li>
-    <li>Aligning investments with both short-term savings and long-term tax efficiency</li>
+    <li><strong>•	Capital Gains Optimization </strong>– Strategic timing and structuring of investments to minimize tax liability on your gains</li>
+    <li><strong>•	Section 80C Maximization </strong>– Comprehensive utilization of tax-saving instruments under Section 80C to reduce your taxable income</li>
+    <li><strong>•	Section 10(10D) Benefits </strong>– Expert guidance on insurance-based tax planning to optimize both protection and tax efficiency</li>
+    <li><strong>•	Year-Round Tax Planning </strong>– Proactive strategies throughout the year, not just during tax season, to minimize your overall tax burden</li>
+    <li><strong>•	Regulatory Compliance </strong>– Stay updated with changing tax laws and ensure all your strategies remain compliant and optimized</li>
+
   </ul>
 
-  <p>We place strong emphasis on <strong> integrating tax planning into your overall financial strategy.</strong>.</p>
-  <p>With our guidance, you don’t just save taxes—you <strong>build a smarter financial roadmap.</strong>.</p>
-  <p><strong>Plan smarter, save better, and secure your finances with a forward-looking tax plan.</strong></p>
 </div>
 
 
@@ -205,7 +203,7 @@
 }
 
 .service-list li {
-  background-color: #2E8B57;
+  background-color: #6c8f7b;
   color: white;
   padding: 15px 15px;
   margin-bottom: 0; /* No gap between list items */
@@ -302,6 +300,179 @@ body.loaded {
 body.loaded .services-container-left {
   transform: translateX(0);
   opacity: 1;
+}
+
+/* Responsive Styles */
+@media (max-width: 900px) {
+  .container {
+    margin-left: 0 !important;
+    padding: 0 10px;
+  }
+  .service-detail .container {
+    margin-left: 0 !important;
+    padding: 0 5px;
+  }
+  .services-container-left {
+    position: static !important;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    transform: none !important;
+    opacity: 1 !important;
+    left: 0 !important;
+    top: 0 !important;
+  }
+  .services {
+    margin-left: 0 !important;
+    width: 100%;
+    align-items: flex-start;
+  }
+  .service-list {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  .services-container-left {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: static !important;
+    left: 0 !important;
+    top: 0 !important;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+  .services {
+    margin-left: 0 !important;
+    width: 100%;
+    align-items: stretch;
+  }
+  .service-list {
+    width: 100%;
+    max-width: 100%;
+  }
+  .service-detail .container {
+    margin-left: 0 !important;
+    padding: 0 2vw;
+  }
+  .paragraph-section {
+    max-width: 100%;
+    padding: 0 5px;
+    font-size: 15px;
+  }
+  .service-detail img {
+    max-width: 98vw !important;
+    height: auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .header-bottom .container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5px;
+  }
+  .header-head h1 {
+    font-size: 1.2rem !important;
+    gap: 4px !important;
+  }
+  .service-detail .container {
+    padding: 0 2vw;
+  }
+  .paragraph-section {
+    font-size: 14px;
+    padding: 0 2px;
+  }
+  .service-detail img {
+    max-width: 96vw !important;
+    height: auto;
+  }
+  .enquiry-btn {
+    font-size: 1rem;
+    padding: 10px 18px;
+  }
+  .service-list {
+    width: 100%;
+    max-width: 100%;
+  }
+  .services {
+    margin-left: 0 !important;
+  }
+  .services h3 {
+    margin-left: 0 !important;
+    text-align: center;
+  }
+}
+
+/* Hamburger and Navbar Responsive */
+@media (max-width: 900px) {
+  .header-bottom .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav-open-btn {
+    display: block !important;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #1a237e;
+    margin-left: 1rem;
+  }
+  .navbar {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: #fff;
+    width: 80vw;
+    max-width: 320px;
+    box-shadow: 0 2px 12px rgba(44,62,80,0.08);
+    z-index: 1000;
+    display: none;
+    flex-direction: column;
+    padding: 1.5rem 1rem;
+  }
+  .navbar.active {
+    display: flex;
+  }
+  .nav-close-btn {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #1a237e;
+    margin-left: auto;
+    margin-bottom: 1rem;
+  }
+  .navbar-list {
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+}
+@media (min-width: 901px) {
+  .nav-open-btn, .nav-close-btn {
+    display: none !important;
+  }
+  .navbar {
+    display: flex !important;
+    position: static;
+    background: none;
+    box-shadow: none;
+    flex-direction: row;
+    padding: 0;
+    width: auto;
+    max-width: none;
+  }
+  .navbar-list {
+    flex-direction: row;
+    gap: 2rem;
+  }
 }
 
    </style>

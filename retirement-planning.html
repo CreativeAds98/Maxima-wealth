@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Retirement Planning | Maxima Wealth Advisors</title>
   <link rel="stylesheet" href="assets/css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
   <!-- Header Start -->
@@ -126,27 +127,24 @@
     <section class="service-detail">
     <div class="container" style="margin-left:260px;">
       <h1 class="h2 section-title" style="text-align:center;">Retirement Planning</h1>
-      <img src="assets/images/services-10.jpg" alt="Investment Planning" style="max-width:420px; margin-bottom:24px; display:block; margin-left:auto; margin-right:auto;">
+      <img src="assets/images/service-23.jpg" alt="Investment Planning" style="max-width:420px; margin-bottom:24px; display:block; margin-left:auto; margin-right:auto;">
      
 
       <div class="paragraph-section">
-  <h2>Retirement Planning: Building a Secure and Independent Future</h2>
-  <p><strong>Retirement planning is a vital step toward</strong> achieving long-term financial independence <strong> and peace of mind in your post-working years.</strong>.</p>
+  <h2>Secure Your Golden Years with Confidence</h2>
+  <p>Plan for a retirement that maintains your desired lifestyle while accounting for inflation, healthcare costs, and changing needs over time.</p>
   
-  <p>Our dedicated financial experts help individuals prepare for retirement with a <strong>goal-based investment strategy</strong>—one that ensures wealth accumulation, income stability, and risk protection.</p>
   
-  <h3>Key elements of our retirement planning approach include:</h3>
+  <h3>What You Gain:</h3>
   <ul>
-    <li>Starting early to  <strong>maximize compounding benefits</strong></li>
-    <li>Selecting <strong> a mix of growth and income-oriented investments</strong></li>
-    <li><strong>Factoring in</strong> inflation and healthcare costs</li>
-    <li>Utilizing tax-efficient retirement savings options</li>
-    <li>Ensuring regular income through annuities or SWPs post-retirement</li>
+    <li><strong>•	Inflation-Protected Strategies </strong>Investment approaches that ensure your purchasing power grows over time, protecting you from the eroding effects of inflation</li>
+    <li><strong> •	Healthcare Cost Planning </strong>– Comprehensive analysis and preparation for medical expenses, including long-term care considerations</li>
+    <li><strong>•	Lifestyle Preservation </strong>– Calculate and plan for the exact income needed to maintain your preferred standard of living throughout retirement</li>
+    <li><strong>•	Multiple Income Streams  </strong>– Diversified retirement income sources including pensions, investments, and systematic withdrawal plans</li>
+    <li><strong>•	Legacy Planning Integration  </strong>– Ensure your retirement strategy aligns with your wealth transfer goals</li>
+
   </ul>
 
-  <p>We place strong emphasis on  <strong>setting realistic goals and timelines tailored to your lifestyle and financial expectations.</strong>.</p>
-  <p>With our guidance, you don’t just save for retirement<strong>—you build a financially secure future.</strong>.</p>
-  <p><strong>Retire with confidence through a structured, personalized, and future-ready retirement plan.</strong></p>
 </div>
 
 
@@ -205,7 +203,7 @@
 }
 
 .service-list li {
-  background-color: #2E8B57;
+  background-color: #6c8f7b;
   color: white;
   padding: 15px 15px;
   margin-bottom: 0; /* No gap between list items */
@@ -224,7 +222,7 @@
 }
 
 .service-list li:hover {
-  background-color: #246f45;
+  background-color: #2d6f24;
 }
 
 .service-list li.active {
@@ -304,7 +302,177 @@ body.loaded .services-container-left {
   opacity: 1;
 }
 
-   </style>
+/* Responsive Styles */
+@media (max-width: 900px) {
+  .container {
+    margin-left: 0 !important;
+    padding: 0 10px;
+  }
+  .service-detail .container {
+    margin-left: 0 !important;
+    padding: 0 5px;
+  }
+  .services-container-left {
+    position: static !important;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    transform: none !important;
+    opacity: 1 !important;
+    left: 0 !important;
+    top: 0 !important;
+  }
+  .services {
+    margin-left: 0 !important;
+    width: 100%;
+    align-items: flex-start;
+  }
+  .service-list {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  .services-container-left {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: static !important;
+    left: 0 !important;
+    top: 0 !important;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+  .services {
+    margin-left: 0 !important;
+    width: 100%;
+    align-items: stretch;
+  }
+  .service-list {
+    width: 100%;
+    max-width: 100%;
+  }
+  .service-detail .container {
+    margin-left: 0 !important;
+    padding: 0 2vw;
+  }
+  .paragraph-section {
+    max-width: 100%;
+    padding: 0 5px;
+    font-size: 15px;
+  }
+  .service-detail img {
+    max-width: 98vw !important;
+    height: auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .header-bottom .container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5px;
+  }
+  .header-head h1 {
+    font-size: 1.2rem !important;
+    gap: 4px !important;
+  }
+  .service-detail .container {
+    padding: 0 2vw;
+  }
+  .paragraph-section {
+    font-size: 14px;
+    padding: 0 2px;
+  }
+  .service-detail img {
+    max-width: 96vw !important;
+    height: auto;
+  }
+  .enquiry-btn {
+    font-size: 1rem;
+    padding: 10px 18px;
+  }
+  .service-list {
+    width: 100%;
+    max-width: 100%;
+  }
+  .services {
+    margin-left: 0 !important;
+  }
+}
+
+/* Hamburger and Navbar Responsive */
+@media (max-width: 900px) {
+  .header-bottom .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav-open-btn {
+    display: block !important;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #1a237e;
+    margin-left: 1rem;
+  }
+  .navbar {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: #fff;
+    width: 80vw;
+    max-width: 320px;
+    box-shadow: 0 2px 12px rgba(44,62,80,0.08);
+    z-index: 1000;
+    display: none;
+    flex-direction: column;
+    padding: 1.5rem 1rem;
+  }
+  .navbar.active {
+    display: flex;
+  }
+  .nav-close-btn {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #1a237e;
+    margin-left: auto;
+    margin-bottom: 1rem;
+  }
+  .navbar-list {
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+}
+@media (min-width: 901px) {
+  .nav-open-btn, .nav-close-btn {
+    display: none !important;
+  }
+  .navbar {
+    display: flex !important;
+    position: static;
+    background: none;
+    box-shadow: none;
+    flex-direction: row;
+    padding: 0;
+    width: auto;
+    max-width: none;
+  }
+  .navbar-list {
+    flex-direction: row;
+    gap: 2rem;
+  }
+}
+
+/* ...existing code... */
+</style>
 
   <!-- Scripts -->
   <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" type="module"></script>

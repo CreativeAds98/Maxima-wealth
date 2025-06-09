@@ -432,19 +432,29 @@ button, a { transition: var(--transition); }
   margin-bottom: 2rem;
 }
 .founder-banner {
-  flex: 0 0 260px;
+  flex: 0 0 320px;
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 6px 32px rgba(44, 62, 80, 0.13);
+  padding: 18px;
+  margin-bottom: 18px;
+  width: 320px;
+  height: 380px;
+  overflow: hidden;
 }
 .founder-banner img {
-  width: 220px;
-  height: 220px;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  border-radius: 50%;
-  border: 5px solid #e3ecf7;
-  box-shadow: 0 4px 24px rgba(44, 62, 80, 0.10);
+  border-radius: 12px;
+  border: 4px solid #e3ecf7;
+  box-shadow: none;
   background: #fff;
+  display: block;
+  margin: 0;
 }
 .founder-content {
   flex: 1 1 350px;
@@ -496,6 +506,26 @@ button, a { transition: var(--transition); }
   }
   .founder-content {
     max-width: 100%;
+  }
+  .founder-banner {
+    width: 90vw;
+    max-width: 360px;
+    height: 320px;
+    padding: 10px;
+  }
+  .founder-banner img {
+    border-radius: 10px;
+  }
+}
+@media (max-width: 600px) {
+  .founder-banner {
+    width: 98vw;
+    max-width: 98vw;
+    height: 220px;
+    padding: 4px;
+  }
+  .founder-banner img {
+    border-radius: 8px;
   }
 }
 
@@ -992,15 +1022,19 @@ button, a { transition: var(--transition); }
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 2px 12px rgba(44,62,80,0.10);
-  width: 100%;
-  max-width: 320px;
+  width: 100vw;
+  max-width: 100vw;
+  min-width: 0;
   border: 2px solid #ffe082;
   margin-bottom: 10px;
+  margin-left: 50%;
+  transform: translateX(-50%);
 }
 
 .footer-map iframe {
-  width: 100%;
-  height: 160px;
+  width: 100vw;
+  min-width: 0;
+  height: 320px;
   border: 0;
   display: block;
 }
@@ -1617,7 +1651,7 @@ button, a { transition: var(--transition); }
   border: 1.5px solid #ffe082;
   border-radius: 14px;
   padding: 2.2rem 1.5rem 1.5rem 1.5rem;
-  max-width: 740px;
+  max-width: 840px;
   min-width: 460px;
   box-shadow: 0 4px 18px rgba(245, 180, 50, 0.10), 0 1.5px 6px rgba(44,62,80,0.04);
   font-family: 'Segoe UI', sans-serif;

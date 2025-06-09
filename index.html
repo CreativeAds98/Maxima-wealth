@@ -63,8 +63,8 @@
             gap: 8px;
             line-height: 1.1;
           ">
-            <span style="color:#ff9800;">Maxima</span>
-            <span style="color:#1a237e;">Wealth</span>
+            <span style="color:#ff9800;">Maxima Wealth</span>
+            <span style="color:#1a237e;">Advisors</span>
           </h1>
         </a>
 
@@ -121,12 +121,10 @@
                 <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
               </li>
 
-              <li>
-                <a href="#faq" class="navbar-link" data-nav-link>FAQs</a>
-              </li>
+             
 
               <li>
-                <a href="#footer" class="navbar-link" data-nav-link>Contact</a>
+                <a href="#faq" class="navbar-link" data-nav-link>Contact</a>
               </li>
 
             </ul>
@@ -158,7 +156,7 @@
           <div class="hero-content">
 
             
-            <h1 class="h1 hero-title">Welcome to Maxima-Wealth</h1>
+            <h1 class="h1 hero-title">Welcome to Maxima-Wealth Advisors</h1>
 
             <p class="hero-text">
                 At Maxima Wealth Advisors, we are committed to empowering you with the knowledge and tools to achieve your financial goals. 
@@ -190,7 +188,7 @@
         <div class="container founder-flex">
 
           <figure class="founder-banner">
-            <img src="./assets/images/author.jpg" alt="Founder image">
+            <img src="./assets/images/founder.png" alt="Founder image">
           </figure>
 
           <div class="founder-content">
@@ -254,7 +252,7 @@
 
             <p class="section-subtitle">About Us</p>
 
-            <h2 class="h2 section-title">"Your health is our priority."</h2>
+            <h2 class="h2 section-title"></h2>
 
             <p class="about-text">
               At Maxima Wealth Advisors, we believe that every financial dream deserves a
@@ -742,24 +740,51 @@
 
       <section class="faq" id="faq">
 
-         <h2 class="h2 section-title">Frequently Asked Questions</h2>
+         <h2 class="h2 section-title">Contact US</h2>
          
-        <div class="container-flex">
+       <div class="container-flex">
 
+  <!-- Complaint + Address Box as a Single Column -->
+  <div style="flex: 1 1 100%; max-width: 500px;">
+    <div class="complaint-report-box">
+      <h3>📝 Complaint Report</h3>
+      <ul class="complaint-stats">
+        <li><strong>Complaints Received:</strong> 2</li>
+        <li><strong>Complaints Resolved:</strong> 2</li>
+      </ul>
+    </div>
 
-         
-          <div class="complaint-report-box">
-                 <h3>📝 Complaint Report</h3>
-              <ul class="complaint-stats">
-                <li><strong>Complaints Received:</strong> 2</li>
-                <li><strong>Complaints Resolved:</strong> 2</li>
-              </ul>
-          </div>
+    <!-- Address section BELOW the complaint box -->
+    <div class="footer-left" style="margin-top: 20px;">
+      <ul class="contact-list">
+        <li>
+          <a href="#" class="contact-link">
+            <ion-icon name="location-outline"></ion-icon>
+            <address>
+             1st Floor, Door No. 6/3, New No. 162, Balasundaram Street,
+              Kamadhe­nu Nagar, Avarampalayam, Coimbatore, Coimbatore, Tamil Nadu, 641006
+            </address>
+          </a>
+        </li>
+        <li>
+          <a href="tel:+0123456789" class="contact-link">
+            <ion-icon name="call-outline"></ion-icon>
+            <span>7200254956</span>
+          </a>
+        </li>
+        <li>
+          <a href="mailto:maximawealthadvisors@gmail.com" class="contact-link">
+            <ion-icon name="mail-outline"></ion-icon>
+            <span>maximawealthadvisors@gmail.com</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
 
-
-
-            <div class="faq-enquiry">
-         <h3 class="enquiry-title">Enquiry Form</h3>
+  <!-- Enquiry Form Stays As-Is -->
+  <div class="faq-enquiry">
+    <h3 class="enquiry-title">Enquiry Form</h3>
          
           <form class="enquiry-form" action="https://formspree.io/f/xpwrwonr" method="POST" autocomplete="off">
             <div class="form-group">
@@ -777,69 +802,42 @@
            <button type="submit" class="enquiry-btn">Submit</button>
          </form>
         </div>
+  </div>
 
+  </div>
+
+
+
+         
       </section>
 
 
   <!-- 
     - #FOOTER
   -->
+<footer class="footer" id="footer" style="padding: 0; margin: 0;">
 
-  <footer class="footer" id="footer">
+  <!-- Map Embed Start -->
+  <div class="footer-map" style="
+    width: 100%;
+    height: 300px;
+    border-radius: 0;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(44,62,80,0.08);">
+    
+    <iframe
+      src="https://www.google.com/maps?q=1st+Floor,+Door+no+6/3,+New+No+162+Balasundaram+Street,+Kamadhenu+Nagar,+Avarampalayam,+Coimbatore-641006+Tamil+Nadu,+India&output=embed"
+      width="100%" height="100%" style="border:0;" allowfullscreen=""
+      loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+      title="Maxima Wealth Advisors Location">
+    </iframe>
+  </div>
+  <!-- Map Embed End -->
 
-     <div class="footer-top">
-      <div class="container">
-
-        <div class="footer-left">
-          <ul class="contact-list">
-
-            <li>
-              <a href="#" class="contact-link">
-                <ion-icon name="location-outline"></ion-icon>
-
-                <address>
-                  1st Floor , Door no 6/3, New No 162
-                          Balasundaram Street, Kamadhenu Nagar, Avarampalayam
-                                  Coimbatore-641006 Tamil Nadu , India
-                    </address>
-                  </a>
-            </li>
-
-            <li>
-              <a href="tel:+0123456789" class="contact-link">
-                <ion-icon name="call-outline"></ion-icon>
-
-                <span>7200254956</span>
-              </a>
-            </li>
-
-            <li>
-              <a href="mailto:contact@homeverse.com" class="contact-link">
-                <ion-icon name="mail-outline"></ion-icon>
-
-                <span>maximawealthadvisors@gmail.com</span>
-              </a>
-            </li>
-
-          </ul>
-
-        </div>
-
-
-
-         <div class="footer-right">
-
-                <!-- Map Embed Start -->
-                <div class="footer-map" style="margin: 18px 0 18px 0; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 12px rgba(44,62,80,0.08); max-width: 320px;">
-                 <iframe
-                 src="https://www.google.com/maps?q=1st+Floor,+Door+no+6/3,+New+No+162+Balasundaram+Street,+Kamadhenu+Nagar,+Avarampalayam,+Coimbatore-641006+Tamil+Nadu,+India&output=embed"
-                 width="100%" height="160" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-                 title="Maxima Wealth Advisors Location"></iframe>
-                </div>
-                <!-- Map Embed End -->
+</footer>
 
         <div class="footer-social">
-          <p class="section-subtitle">Follow Us</p>
+          <p class="section-subtitle"></p>
 
           <ul class="social-list">
 
@@ -881,7 +879,7 @@
         
 
         <p class="copyright">
-          &copy; 2025 @ Maxima-Wealth-Advisor . All Rights Reserved
+          &copy; 2025 @ Maxima-Wealth-Advisors. All Rights Reserved
         </p>
 
       </div>

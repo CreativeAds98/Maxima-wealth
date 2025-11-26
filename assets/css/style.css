@@ -268,6 +268,25 @@ button, a { transition: var(--transition); }
   padding-block: 25px;
 }
 
+.header-bottom-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+  font-size: 2.2rem;
+  letter-spacing: 2px;
+  color: #1a237e;
+  margin: 0;
+  text-shadow: 0 2px 8px rgba(44,62,80,0.10);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  line-height: 1.1;
+}
 
 
 .navbar {
@@ -418,12 +437,10 @@ button, a { transition: var(--transition); }
 
 
 /*-----------------------------------*\
-  # FOUNDER
+  #FOUNDER
 \*-----------------------------------*/
 
- 
-
-  .founder-flex {
+.founder-flex {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
@@ -450,8 +467,7 @@ button, a { transition: var(--transition); }
   height: 100%;
   object-fit: cover;
   border-radius: 12px;
-  border: 4px solid #e3ecf7;
-  box-shadow: none;
+  border: 5px solid #e3ecf7;
   background: #fff;
   display: block;
   margin: 0;
@@ -529,7 +545,6 @@ button, a { transition: var(--transition); }
   }
 }
 
-
 /*-----------------------------------*\
   #ABOUT
 \*-----------------------------------*/
@@ -537,21 +552,23 @@ button, a { transition: var(--transition); }
 .about { padding-block: var(--section-padding); }
 
 .about-banner {
-  position: relative;
-  margin-bottom: 40px;
+  background: #ffffff;
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  margin: 20px auto;
 }
 
-.about-banner > img {
-  max-width: max-content;
-  width: 100%;
-}
-
-.about-banner .abs-img {
-  position: absolute;
-  bottom: 100px;
-  left: 15px;
-  width: 50%;
-  border-radius: 4px;
+.about-banner img {
+  border-radius: 10px;
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 .about .section-subtitle { margin-inline: 0; }
@@ -838,9 +855,9 @@ button, a { transition: var(--transition); }
 
 .blog-card .card-banner img {
   width: 100%;
-  height: auto;         /* Set a fixed height for all blog images */
-  object-fit: cover;     /* Ensures the image covers the area without distortion */
-  border-radius: 12px;   /* Optional: rounded corners for a modern look */
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px;
   display: block;
 }
 
@@ -1923,13 +1940,16 @@ button, a { transition: var(--transition); }
   .navbar-dropdown:focus-within > .dropdown-menu {
     display: block;
   }
-}
-
-/* Ensure header stays below navbar */
-@media (max-width: 900px) {
   .header-bottom {
     position: relative;
     z-index: 1000;
+  }
+}
+
+/* Hide menu icon on large screens */
+@media (min-width: 901px) {
+  .nav-open-btn {
+    display: none !important;
   }
 }
 

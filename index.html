@@ -736,13 +736,13 @@
 
   <!-- Complaint + Address Box as a Single Column -->
   <div style="flex: 1 1 100%; max-width: 500px;">
-    <div class="complaint-report-box">
+    <!-- <div class="complaint-report-box">
       <h3>📝 Complaint Report</h3>
       <ul class="complaint-stats">
         <li><strong>Complaints Received:</strong> 0</li>
         <li><strong>Complaints Resolved:</strong> 0</li>
       </ul>
-    </div>
+    </div>-->
 
     <!-- Address section BELOW the complaint box -->
     <div class="footer-left" style="margin-top: 20px;">
@@ -791,7 +791,63 @@
             </div>
            <button type="submit" class="enquiry-btn">Submit</button>
          </form>
+         
+
+
         </div>
+
+
+        <!-- Complaint  Box -->
+  <div class="complaint-center">
+
+  <h3 class="complaint-title">📝 Complaint Report</h3>
+
+  <div class="complaint-table-wrapper">
+
+    <table class="complaint-center-table">
+      <thead>
+        <tr>
+          <th>Sr. No.</th>
+          <th>Received from</th>
+          <th>Pending at the end of last month</th>
+          <th>Received</th>
+          <th>Resolved *</th>
+          <th>Total Pending #</th>
+          <th>Pending complaints > 3 months</th>
+          <th>Average Resolution time^ (in days)</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Directly from Investors</td>
+          <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+        </tr>
+
+        <tr>
+          <td>2</td>
+          <td>SEBI (SCORES)</td>
+          <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+        </tr>
+
+        <tr>
+          <td>3</td>
+          <td>Other Sources (if any)</td>
+          <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+        </tr>
+
+        <tr>
+          <td colspan="2"><strong>Grand Total</strong></td>
+          <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+        </tr>
+      </tbody>
+
+    </table>
+
+  </div>
+</div>
+
   </div>
 
   </div>
@@ -800,6 +856,63 @@
 
          
       </section>
+
+
+
+      <!-- 
+        - #TERMS & CONDITIONS
+      -->
+
+    <section class="terms-section">
+  <div class="terms-box">
+    <h3>📜 Terms & Conditions</h3>
+
+    <ol class="terms-list">
+      <li>The Investment Adviser (IA) shall only accept payments towards its fees for Investment Advisory Services and is not permitted to accept funds or securities in its account on the client’s behalf.</li>
+
+      <li>The IA does not guarantee returns, accuracy, or risk-free investments. All advice is subject to market risks, and there is no assurance of any returns or profits.</li>
+
+      <li>Any assured/guaranteed/fixed returns schemes or any other schemes of similar nature are prohibited by law. No scheme of this nature shall be offered to the client by the IA.</li>
+
+      <li>Investment advice related only to securities shall fall under the purview of SEBI. For services not under SEBI, the IA shall disclose this to the client and obtain a declaration confirming that such services do not fall under SEBI regulations.</li>
+
+      <li>This agreement is for investment advisory services only. The IA cannot execute trades (buy/sell) on behalf of the client without explicit consent for every trade.</li>
+
+      <li>The fee charged by IA will be subject to the maximum limit prescribed by SEBI/IAASB.  
+        <ul>
+          <li>(i) Fixed Fee mode: ₹1,51,000/- per annum per family.</li>
+          <li>(ii) AUA mode: 2.5% of AUA per annum per family.</li>
+          <li>(iii) Fee mode may be changed with client’s consent.</li>
+          <li>(iv) Fee limits exclude statutory charges.</li>
+          <li>(v) Fee limits do not apply to non-individual / accredited investors.</li>
+        </ul>
+      </li>
+
+      <li>IA may charge fees in advance (maximum two quarters). In case of premature termination, the client may seek a refund of proportionate fees after deducting breakage fee (maximum one-quarter fee).</li>
+
+      <li>Client may pay fees through cheque, online transfer, UPI, etc. Cash payment is strictly not allowed. Payments may also be made via CeFCoM (BSE IAASB mechanism).</li>
+
+      <li>The IA requires financial information (income, investments, liabilities, etc.) from the client to provide accurate advisory services.</li>
+
+      <li>The IA shall conduct risk profiling and suitability analysis before and during the advisory engagement. The assessed risk profile will be shared with the client.</li>
+
+      <li>To avoid conflict of interest, IA or its group/family members shall not provide distribution services to the client. IA will recommend direct (non-commission) plans only.</li>
+
+      <li>Grievance Redressal Process:<br>  
+        <strong>Step 1:</strong> Contact the IA (details on IA website).  <br> 
+        <strong>Step 2:</strong> If not resolved, lodge complaints on SEBI SCORES: www.scores.sebi.gov.in  <br> 
+        <strong>Step 3:</strong> If still unsatisfied, use Online Dispute Resolution (ODR) via https://smartodr.in  
+      </li>
+
+      <li>SEBI registration, IAASB enlistment, and NISM certification do not guarantee performance or returns.</li>
+
+      <li>Clients must keep their contact details (email, mobile number) updated with the IA at all times.</li>
+
+      <li>The IA shall never ask for login credentials or OTPs for Trading, Demat, or Bank Accounts. Clients should never share such sensitive information.</li>
+    </ol>
+  </div>
+</section>
+
 
 
   <!-- 
@@ -813,7 +926,8 @@
     height: 300px;
     border-radius: 0;
     overflow: hidden;
-    box-shadow: 0 2px 12px rgba(44,62,80,0.08);">
+    box-shadow: 0 2px 12px rgba(44,62,80,0.08);
+     margin-top: 25px;">
     
     <iframe
       src="https://www.google.com/maps?q=1st+Floor,+Door+no+6/3,+New+No+162+Balasundaram+Street,+Kamadhenu+Nagar,+Avarampalayam,+Coimbatore-641006+Tamil+Nadu,+India&output=embed"
@@ -848,9 +962,6 @@
                 <ion-icon name="logo-whatsapp"></ion-icon>
               </a>
             </li>
-
-          
-
           </ul>
 
         </div>
@@ -858,16 +969,8 @@
       </div>
     </div>
 
-
-
-
-
-
     <div class="footer-bottom">
       <div class="container">
-
-        
-
         <p class="copyright">
           &copy; 2025 @ Maxima-Wealth-Advisors. All Rights Reserved
         </p>

@@ -1,88 +1,48 @@
 'use strict';
 
-/**
- * element toggle function
- */
+/* toggle element helper */
+const elemToggle = (elem) => elem.classList.toggle("active");
 
-const elemToggleFunc = function (elem) { elem.classList.toggle("active"); }
-
-
-
-/**
- * navbar toggle
- */
-
+/* elements */
 const navbar = document.querySelector("[data-navbar]");
 const overlay = document.querySelector("[data-overlay]");
-const navCloseBtn = document.querySelector("[data-nav-close-btn]");
 const navOpenBtn = document.querySelector("[data-nav-open-btn]");
-const navbarLinks = document.querySelectorAll("[data-nav-link]");
+const navCloseBtn = document.querySelector("[data-nav-close-btn]");
+const navLinks = document.querySelectorAll("[data-nav-link]");
 
-const navElemArr = [overlay, navCloseBtn, navOpenBtn];
+/* open menu */
+navOpenBtn.addEventListener("click", () => {
+  navbar.classList.add("active");
+  overlay.classList.add("active");
+});
 
-/**
- * close navbar when click on any navbar link
- */
+/* close menu */
+navCloseBtn.addEventListener("click", () => {
+  navbar.classList.remove("active");
+  overlay.classList.remove("active");
+});
 
-for (let i = 0; i < navbarLinks.length; i++) { navElemArr.push(navbarLinks[i]); }
+/* close when clicking overlay */
+overlay.addEventListener("click", () => {
+  navbar.classList.remove("active");
+  overlay.classList.remove("active");
+});
 
-/**
- * addd event on all elements for toggling navbar
- */
-
-for (let i = 0; i < navElemArr.length; i++) {
-  navElemArr[i].addEventListener("click", function () {
-    elemToggleFunc(navbar);
-    elemToggleFunc(overlay);
-  });
-}
-
-
-
-/**
- * header active state
- */
-
-const header = document.querySelector("[data-header]");
-
-window.addEventListener("scroll", function () {
-  window.scrollY >= 400 ? header.classList.add("active")
-    : header.classList.remove("active");
-}); 
-
-
-function toggleMenu() {
-  const navbar = document.querySelector(".navbar");
-  const overlay = document.querySelector(".overlay");
-
-  if (navbar.classList.contains("active")) {
+/* close when clicking nav links */
+navLinks.forEach(link => {
+  link.addEventListener("click", () => {
     navbar.classList.remove("active");
     overlay.classList.remove("active");
-  } else {
-    navbar.classList.add("active");
-    overlay.classList.add("active");
-  }
-}
-
-// Handle dropdowns on mobile
-document.querySelectorAll(".navbar-dropdown > .navbar-link").forEach(link => {
-  link.addEventListener("click", function (e) {
-    if (window.innerWidth <= 768) {
-      e.preventDefault();
-      const dropdown = this.nextElementSibling;
-      dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
-    }
   });
 });
 
-// Open menu
-document.querySelector('.nav-open-btn').onclick = function() {
-  document.querySelector('.navbar').classList.add('active');
-};
-// Close menu
-document.querySelector('.nav-close-btn').onclick = function() {
-  document.querySelector('.navbar').classList.remove('active');
-};
-
-
-
+/* mobile dropdown */
+document.querySelectorAll(".navbar-dropdown > .navbar-link").forEach(link => {
+  link.addEventListener("click", function(e) {
+    if (window.innerWidth <= 768) {
+      e.preventDefault();
+      const parent = this.parentElement;
+      parent.classList.toggle("open");
+    }
+  });
+});
